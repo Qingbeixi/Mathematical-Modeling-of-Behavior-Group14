@@ -108,9 +108,9 @@ prob_cycle = models.nested(V, None, nests, 1)
 prob_pt = models.nested(V, None, nests, 2)
 prob_drive = models.nested(V, None, nests, 3)
 
-# access to the results
-biogeme_nested_same = bio.BIOGEME(database, logprob)
-biogeme_nested_same.modelName = 'nested_free'
-nested_same_results4 = biogeme_nested_same.estimate()
+# # access to the results
+# biogeme_nested_same = bio.BIOGEME(database, logprob)
+# biogeme_nested_same.modelName = 'nested_free'
+# nested_same_results4 = biogeme_nested_same.estimate()
 
 
