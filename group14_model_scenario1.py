@@ -87,7 +87,7 @@ boxcox_time_pt = models.boxcox(dur_pt, lambda_boxcox)
 boxcox_time_drive = models.boxcox(dur_driving, lambda_boxcox)
 # from model 4
 # New utility functions
-OptDrive =  (segmented_ascDrive_age + gene_cost * cost_driving + drive_time * boxcox_time_drive + drive_month * travel_month )
+OptDrive =  (segmented_ascDrive_age + gene_cost * cost_driving*1.15 + drive_time * boxcox_time_drive + drive_month * travel_month )
 OptWalk =  (segmented_ascWalk_age+ walk_time * boxcox_time_walk + walk_month * travel_month)
 OptCycle = (segmented_ascCycle_age + cycle_time * boxcox_time_cycle + cycle_month * travel_month)
 OptPt =  (segmented_ascPT_age + cost_transit * gene_cost + pt_time * boxcox_time_pt  + pt_month * travel_month)
