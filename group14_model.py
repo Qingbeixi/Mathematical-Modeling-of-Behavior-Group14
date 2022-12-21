@@ -103,10 +103,10 @@ V = {1: OptWalk, 2: OptCycle, 3: OptPt, 4: OptDrive}
 
 # access to propability required for market share
 logprob = models.lognested(V, None, nests, choice)
-prob_walk = models.nested(V, None, nests, 0)
-prob_cycle = models.nested(V, None, nests, 1)
-prob_pt = models.nested(V, None, nests, 2)
-prob_drive = models.nested(V, None, nests, 3)
+prob_walk = models.nested(V, None, nests, 1)
+prob_cycle = models.nested(V, None, nests, 2)
+prob_pt = models.nested(V, None, nests, 3)
+prob_drive = models.nested(V, None, nests, 4)
 
 # # access to the results
 # biogeme_nested_same = bio.BIOGEME(database, logprob)
